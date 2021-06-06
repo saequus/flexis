@@ -1,16 +1,23 @@
 [tool.poetry]
 name = "django-flexis"
+packages = [
+    { include = "flexis" },
+    { include = "flexis/**/*.py" },
+]
 version = "0.1.0"
-description = "Flexible key-value JSON views"
-authors = ["Your Name <you@example.com>"]
+description = "Flexible path key-value JSON response"
+authors = ["saequus <slava@spetsyian.com>"]
 license = "MIT"
+readme = "README.md"
+
 
 [tool.poetry.dependencies]
-python = "^3.9"
-Django = "^3.2.4"
+python = "^3.6"
+Django = "^3.0.1"
 ujson = "^4.0.2"
 
 [tool.poetry.dev-dependencies]
+tox = "^3.23.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

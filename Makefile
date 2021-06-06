@@ -1,5 +1,5 @@
 test:
-	python3 run_tests.py
+	python3 runtests.py
 
 start:
 	python3 ./manage.py runserver
